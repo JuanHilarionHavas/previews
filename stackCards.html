@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preview Creativos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('./assets/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #333333;
+      display: flex;
+      justify-content: space-evenly;
+      gap: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      background: #0000004d;
+    }
+
+    aside {
+      width: 250px;
+      background: rgb(0 0 0);
+      padding: 1rem;
+      flex-shrink: 0;
+    }
+
+    aside h3 {
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    aside p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .preview-area {
+      flex: 1;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1rem;
+      place-items: center;
+      overflow-y: auto;
+    }
+
+    .ad-frame {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid #ffffff33;
+      border-radius: 10px;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    iframe {
+      border: none;
+      background: white;
+      margin-top: 1rem;
+    }
+
+    .w-300x250 iframe { width: 300px; height: 250px; }
+    .w-300x600 iframe { width: 300px; height: 600px; }
+    .w-320x480 iframe { width: 320px; height: 480px; }
+    .w-728x90  iframe { width: 728px; height: 90px; }
+    .w-970x250 iframe { width: 970px; height: 250px; }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #ffffff22;
+      }
+
+      .preview-area {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>Havas</div>
+    <div>Motech</div>
+    <div>Creative Tech</div>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h3>Formato:</h3>
+      <p>Display Rich Media</p>
+      <h3>País:</h3>
+      <p>Colombia</p>
+      <h3>Cliente:</h3>
+      <p>Pepsi</p>
+    </aside>
+
+    <main class="preview-area">
+      <div class="ad-frame w-300x600">
+        <h3>300x600</h3>
+        <iframe src="creativos/stack_300x600/index.html"></iframe>
+      </div>
+      <!--
+        <div class="ad-frame w-300x250">
+          <iframe src="creativos/300x250/index.html"></iframe>
+        </div>
+        <div class="ad-frame w-320x480">
+          <iframe src="creativos/320x480/index.html"></iframe>
+        </div>
+        <div class="ad-frame w-728x90">
+          <iframe src="creativos/728x90/index.html"></iframe>
+        </div>
+        <div class="ad-frame w-970x250">
+          <iframe src="creativos/970x250/index.html"></iframe>
+        </div>
+      -->
+    </main>
+  </div>
+
+</body>
+</html>
