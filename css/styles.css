@@ -10970,21 +10970,17 @@ section.resume-section .resume-section-content {
 }
 
 .ad-frame {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid #ffffff33;
-    border-radius: 10px;
     padding: 0.5rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     position: relative;
-  }
+}
 
   iframe {
     border: none;
     background: white;
-    margin-top: 1rem;
   }
 
   .w-300x250 iframe { width: 300px; height: 250px; }
