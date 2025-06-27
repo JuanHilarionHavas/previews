@@ -11046,6 +11046,47 @@ section.resume-section {
   display: flex!important;
 }
 
+/* Loader visual */
+.iframe-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-gif {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Frame contenedor */
+.ad-frame {
+  position: relative;
+  min-height: 250px;
+  overflow: hidden;
+}
+
+/* Animación de fade-slide al mostrar una sección */
+.resume-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.resume-section.active-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 @media (max-width: 1450px) {
   .desc-title {
       font-size: 4rem;
