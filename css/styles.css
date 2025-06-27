@@ -10978,6 +10978,7 @@ section.resume-section .resume-section-content {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
   }
 
   iframe {
@@ -11066,11 +11067,27 @@ section.resume-section {
   object-fit: contain;
 }
 
-/* Frame contenedor */
-.ad-frame {
-  position: relative;
-  min-height: 250px;
-  overflow: hidden;
+/* Estilo para navegadores WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent; /* track transparente */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* también track transparente */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(27, 35, 67, 0.4); /* color thumb con opacidad */
+  border-radius: 4px;
+  border: 2px solid transparent; /* efecto de espacio */
+  background-clip: padding-box;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(27, 35, 67, 0.4) transparent;
 }
 
 /* Animación de fade-slide al mostrar una sección */

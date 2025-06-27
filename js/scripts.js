@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
                 if (loader && loader.classList.contains("iframe-loader")) {
                     setTimeout(() => {
                         loader.style.display = "none";
-                    }, 2000);
+                    }, 1000);
                 }
             });
             iframe.dataset.listenerSet = "true";
