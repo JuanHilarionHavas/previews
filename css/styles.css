@@ -10964,7 +10964,8 @@ section.resume-section .resume-section-content {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1rem;
     height: 100vh;
-    place-items: center;
+    justify-content: center;
+    align-items: flex-start;
     overflow-y: auto;
     background: linear-gradient(to bottom, #757575 0%, #d9d9d9 100%);
 }
@@ -10973,14 +10974,14 @@ section.resume-section .resume-section-content {
     padding: 0.5rem;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     position: relative;
 }
 
   iframe {
     border: none;
-    background: white;
+    background: transparent;
   }
 
   .w-300x250 iframe { width: 300px; height: 250px; }
@@ -10988,6 +10989,12 @@ section.resume-section .resume-section-content {
   .w-320x480 iframe { width: 320px; height: 480px; }
   .w-728x90  iframe { width: 728px; height: 90px; }
   .w-970x250 iframe { width: 970px; height: 250px; }
+
+  .w-300x250 h5 { width: 300px; }
+  .w-300x600 h5 { width: 300px; }
+  .w-320x480 h5 { width: 320px; }
+  .w-728x90  h5 { width: 728px;}
+  .w-970x250 h5 { width: 970px; }
 
   /* Description area */
   .description-area {
@@ -11021,6 +11028,27 @@ section.resume-section .resume-section-content {
       border-radius: 2px;
   }
 
+  .qrCodeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .qrCodeContainer img{
+    width: 60px;
+  }
+
+  span.qrCodeLabel {
+    font-size: 9px;
+    font-weight: 900;
+    display: none;
+  }
+
 .desc-title {
     font-size: 8rem;
     font-weight: 900;
@@ -11051,7 +11079,7 @@ section.resume-section {
   z-index: 10;
   width: 100%;
   height: 100%;
-  background: white;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11107,6 +11135,11 @@ html {
 }
 
 @media (max-width: 991px) {
+  .description-accent {
+    top: 29%;
+    width: 10px;
+    height: 80px;
+}
   .sidebar-logo {
       margin-bottom: 0rem;
       margin-left: 2rem;
@@ -11137,9 +11170,38 @@ html {
 
 
 @media (min-width: 768px) {
+  
   section.resume-section {
     min-height: 100vh;
   }
 }
 
 
+@media (max-width: 768px) {
+  
+  p.desc-text {
+    display: none;
+  }
+
+  .description-area {
+    height: 22vh;
+    padding: 0;
+    padding-left: 2rem;
+  }
+  
+  .desc-title {
+      margin-bottom: 0;
+  }
+
+  .desc-subtitle {
+    margin-bottom: 0;
+  }
+
+  .description-content {
+    margin-top: 0rem;
+  }
+
+  .description-accent {
+    top: 50%;
+  }
+}

@@ -5,9 +5,15 @@ window.addEventListener('DOMContentLoaded', event => {
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#sideNav',
-            rootMargin: '0px 0px -40%',
+            rootMargin: '0px -20% -200%',
         });
     }
+
+    const generateQRCode = (targetId) => {
+        const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(window.location.href)}`;
+        document.querySelector(`section#${targetId} .qrCode`).setAttribute("src", qrUrl)
+        document.querySelector(`section#${targetId} .qrCodeLabel`).style.display = "block";
+    };
 
     // Configurar cada iframe una sola vez al cargar
     document.querySelectorAll("iframe").forEach(iframe => {
@@ -30,17 +36,8 @@ window.addEventListener('DOMContentLoaded', event => {
         }
     });
 
-    // Navegación por secciones
-    document.querySelectorAll(".nav-link").forEach(el => {
-        el.addEventListener("click", function () {
-            // Quitar clase activa de todos los enlaces
-            document.querySelectorAll(".nav-link").forEach(link => {
-                link.classList.remove("active");
-            });
-            el.classList.add("active");
+    const activateSectionById = (targetId, ) => {
 
-            // Obtener ID destino y activar sección
-            const targetId = el.getAttribute("href").substring(1);
             const targetElement = document.getElementById(targetId);
 
             document.querySelectorAll("section").forEach(section => {
@@ -58,6 +55,24 @@ window.addEventListener('DOMContentLoaded', event => {
                 const src = iframe.getAttribute("data-src");
                 iframe.setAttribute("src", src);
             });
+
+            generateQRCode(targetId);
+
+    }
+
+    // Navegación por secciones
+    document.querySelectorAll(".nav-link").forEach(el => {
+        el.addEventListener("click", function () {
+            // Quitar clase activa de todos los enlaces
+            document.querySelectorAll(".nav-link").forEach(link => {
+                link.classList.remove("active");
+            });
+            el.classList.add("active");
+
+            // Obtener ID destino y activar sección
+            const targetId = el.getAttribute("href").substring(1);
+            activateSectionById(targetId);
+
         });
     });
 
@@ -73,5 +88,16 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+
+
+
+    const targetId = window.location.hash.substring(1);
+    activateSectionById(targetId);
+    const link = document.querySelector(`a[href="#${targetId}"]`);
+    if (link) {
+        link.classList.add("active");
+    }
+
+    generateQRCode(targetId);
 
 });
