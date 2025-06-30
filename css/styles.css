@@ -11034,9 +11034,10 @@ section.resume-section .resume-section-content {
     align-items: center;
     flex-direction: column;
     color: black;
-    position: absolute;
+    position: fixed;
     bottom: 10px;
-    left: 10px;
+    left: 60%;
+    z-index: 9999;
   }
 
   .qrCodeContainer img{
@@ -11165,6 +11166,9 @@ html {
   section.resume-section {
     margin-top: 1rem;
   }
+  .qrCodeContainer {
+    left: 90%;
+  }
 }
 
 
@@ -11203,5 +11207,22 @@ html {
 
   .description-accent {
     top: 50%;
+  }
+
+  .qrCodeContainer {
+    left: 85%;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .navbar-toggler {
+      position: fixed;
+      right: 15px;
+      top: 20px;
+  }
+    
+  .qrCodeContainer {
+    display: none;
   }
 }

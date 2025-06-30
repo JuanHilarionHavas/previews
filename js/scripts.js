@@ -11,8 +11,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
     const generateQRCode = (targetId) => {
         const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(window.location.href)}`;
-        document.querySelector(`section#${targetId} .qrCode`).setAttribute("src", qrUrl)
-        document.querySelector(`section#${targetId} .qrCodeLabel`).style.display = "block";
+        document.querySelector(`#qrCode`).setAttribute("src", qrUrl)
+        document.querySelector(`#qrCodeLabel`).style.display = "block";
     };
 
     // Configurar cada iframe una sola vez al cargar
