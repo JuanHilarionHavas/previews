@@ -91,7 +91,12 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 
-    const targetId = window.location.hash.substring(1);
+    let targetId = window.location.hash.substring(1);
+
+    if (targetId == ""){
+        targetId = "slidereel";
+    }
+
     activateSectionById(targetId);
     const link = document.querySelector(`a[href="#${targetId}"]`);
     if (link) {
