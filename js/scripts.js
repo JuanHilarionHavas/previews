@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     const generateQRCode = (targetId) => {
-        const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(window.location.pathname)+"#"+targetId}`;
+        const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${window.location.origin}${encodeURIComponent(window.location.pathname)}#${targetId}`;
         document.querySelector(`#qrCode`).setAttribute("src", qrUrl)
         document.querySelector(`#qrCodeLabel`).style.display = "block";
     };
