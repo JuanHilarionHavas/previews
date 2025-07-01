@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', event => {
     }
 
     const generateQRCode = (targetId) => {
-        const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${window.location.origin}${encodeURIComponent(window.location.pathname)}#${targetId}`;
+        const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${window.location.origin}${encodeURIComponent(window.location.pathname)}%23${encodeURIComponent(targetId)}`;
         document.querySelector(`#qrCode`).setAttribute("src", qrUrl)
         document.querySelector(`#qrCodeLabel`).style.display = "block";
     };
@@ -99,6 +99,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     activateSectionById(targetId);
     const link = document.querySelector(`a[href="#${targetId}"]`);
+    console.log("Enlace activado:", link);
     if (link) {
         link.classList.add("active");
     }
