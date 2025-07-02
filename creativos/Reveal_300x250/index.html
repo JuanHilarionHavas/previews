@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>300x600 - XCS - Cross Slider</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link type="text/css" rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body onload="initInterval()">
+        <div id="ad" class="init_ad">
+            <div id="image-comparison-slider">
+                <img id="image_before" src="images/1.jpg" alt="before">
+                <div class="img-wrapper">
+                    <img id="image_after" src="images/2.jpg" alt="after">
+                </div>
+                <div class="handle">
+                    <div class="handle-line"></div>
+                    <div class="handle-circle">
+                        <i class="fas fa-chevron-left"></i>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="handle-line"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts/reveal.js"></script>
+        <script>
+            if (!Enabler.isInitialized()) {
+                Enabler.addEventListener( studio.events.StudioEvent.INIT, enablerInitialized );
+            } else {
+               enablerInitialized();
+            }
+            function enablerInitialized() {
+                // Enabler initialized.
+                // In App ads are rendered offscreen so animation should wait for
+                // the visible event. These are simulated with delays in the local
+                // environment.
+                if (!Enabler.isVisible()) {
+                    Enabler.addEventListener( studio.events.StudioEvent.VISIBLE, adVisible );
+                } else {
+                    adVisible();
+                }
+            }
+            function adVisible() {
+                const ad = document.querySelector('#ad');
+
+                Enabler.startTimer("Time_until_click")
+
+                ad.addEventListener("touchend", exit_click);
+                ad.addEventListener("mouseup", exit_click);
+            }
+
+            function exit_click(){
+                Enabler.stopTimer("Time_until_click");
+                    if(side == "Left"){
+                        Enabler.exit("Clickthrough_Right");
+                    }else{
+                        Enabler.exit("Clickthrough_Left");
+                    }
+            }
+            </script>
+    </body>
+</html>
