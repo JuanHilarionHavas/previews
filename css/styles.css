@@ -10979,7 +10979,7 @@ section.resume-section .resume-section-content {
     align-items: center;
     flex-direction: column;
     position: relative;
-    width: 100%;
+    /*width: 100%;*/
     max-width: 100%;
     box-sizing: border-box;
 }

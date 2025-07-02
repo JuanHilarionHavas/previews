@@ -38,6 +38,9 @@ window.addEventListener('DOMContentLoaded', event => {
 
     const activateSectionById = (targetId, ) => {
 
+            // Control del overflow del HTML
+            document.documentElement.style.overflow = (targetId === "scratch") ? "hidden" : "auto";
+
             const targetElement = document.getElementById(targetId);
 
             document.querySelectorAll("section").forEach(section => {
