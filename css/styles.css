@@ -10892,7 +10892,7 @@ p.lead {
     left: 0;
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 19rem;
     height: 100vh;
   }
   .sidebar-logo img {
@@ -11023,8 +11023,8 @@ section.resume-section .resume-section-content {
     margin-top: -3rem;
   }
 
-  .desc-subtitle{
-    margin-bottom: 1rem;
+  .desc-subtitle {
+    color: white;
   }
 
   .description-accent {
@@ -11142,6 +11142,68 @@ html {
   transform: translateY(0);
 }
 
+/* Animación suave */
+#sideNav .arrow {
+  transition: transform 0.3s ease;
+}
+
+/* Si el link NO tiene clase .collapsed, rota 180° */
+#sideNav a[aria-expanded="true"] .arrow {
+  transform: rotate(-180deg);
+}
+
+.no_preview{
+  position: absolute;
+  top: 40%;
+  text-align: center;
+}
+
+video.embed-responsive-item {
+  width: 80%;
+}
+
+#ctvCanvas .preview-area, #ctvQR .preview-area, #videoBanner .preview-area, #videoCanvas .preview-area, #videoEncard .preview-area{
+  align-items: center;
+}
+
+
+@media (min-width: 1450px) {
+  .ad-frame-container.littlecaesars-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    padding-left: 6rem;
+    gap: 1rem;
+  }
+}
+  .ad-frame h5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .ad-frame .reload-iframe-btn {
+  border: none;
+    background: transparent;
+  padding: 0;
+  margin-left: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.ad-frame .reload-iframe-btn svg {
+  transition: transform 0.5s cubic-bezier(.4,2,.6,1);
+}
+
+.reload-iframe-btn.is-reloading svg {
+  transform: rotate(360deg);
+}
+
+.ad-frame .reload-iframe-btn svg path {
+  stroke: #000;
+}
+
 
 
 @media (max-width: 1450px) {
@@ -11213,7 +11275,7 @@ html {
   }
 
   .desc-subtitle {
-    margin-bottom: 0;
+    display: none;
   }
 
   .description-content {

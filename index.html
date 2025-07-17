@@ -31,61 +31,132 @@
   </head>
   <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-0" id="sideNav">
-      <div class="navbar-brand js-scroll-trigger">
-        <div class="sidebar-logo d-block" aria-label="Logo de la marca MOTECH">
-          <img src="assets/logo_motech.svg" alt="Logo de MOTECH" />
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top p-0" id="sideNav">
+  <div class="navbar-brand js-scroll-trigger">
+    <div class="sidebar-logo d-block" aria-label="Logo de la marca MOTECH">
+      <img src="assets/logo_motech.svg" alt="Logo de MOTECH" />
+    </div>
+  </div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav">
+
+      <!-- Display (collapsible) -->
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" data-bs-toggle="collapse" href="#collapseDisplay" role="button" aria-expanded="false" aria-controls="collapseBasic">
+          Display
+          <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="collapse" id="collapseDisplay" data-bs-parent="#navbarResponsive">
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#stb">Standard banners</a></li>
+          </ul>
         </div>
-      </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigge active" href="#slidereel">SlideReel</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#orbit">3D Orbit</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#socialtwin">SOCIAL TWIN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#stack">Stack</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#cube">3D Cube</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#cinema">Cinema</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#scratch">Scratch</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#reveal">Reveal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#countdown">Countdown</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#playableCatcher">Playable Catcher</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#playablePuzzle">Playable Puzzle</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </li>
+
+      <!-- High Impact Basic (collapsible) -->
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" data-bs-toggle="collapse" href="#collapseBasic" role="button" aria-expanded="false" aria-controls="collapseBasic">
+          High Impact Basic
+          <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="collapse" id="collapseBasic" data-bs-parent="#navbarResponsive">
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#cube">3D Cube</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#scratch">Scratch</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#reveal">Reveal</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#countdown">Countdown</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- High Impact Medium (collapsible) -->
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" data-bs-toggle="collapse" href="#collapseMedium" role="button" aria-expanded="false" aria-controls="collapseMedium">
+          High Impact Medium
+          <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="collapse" id="collapseMedium" data-bs-parent="#navbarResponsive">
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#slidereel">SlideReel</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#socialtwin">SOCIAL TWIN</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#cinema">Cinema</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#stack">Stack</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- High Impact Advanced (collapsible) -->
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" data-bs-toggle="collapse" href="#collapseAdvanced" role="button" aria-expanded="false" aria-controls="collapseAdvanced">
+          High Impact Advanced
+          <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="collapse" id="collapseAdvanced" data-bs-parent="#navbarResponsive">
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#orbit">3D Orbit</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#playableCatcher">Playable Catcher</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#playablePuzzle">Playable Puzzle</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#playableMemory">Playable Memory</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#playableKickups">Playable Kickups</a></li>
+          </ul>
+        </div>
+      </li>
+
+    <!-- DCO (collapsible) -->
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" data-bs-toggle="collapse" href="#collapseDCO" role="button" aria-expanded="false" aria-controls="collapseAdvanced">
+          DCO
+          <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="collapse" id="collapseDCO" data-bs-parent="#navbarResponsive">
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#dcoBasic">DCO Display Basic</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#dcoMedium">DCO Display Medium</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#dcoAdvanced">DCO Display Advanced</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Video VAST (collapsible) -->
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" data-bs-toggle="collapse" href="#collapseVast" role="button" aria-expanded="false" aria-controls="collapseAdvanced">
+          Video VAST
+          <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="collapse" id="collapseVast" data-bs-parent="#navbarResponsive">
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#videoEncard">Video Encard</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#videoCanvas">Video Canvas</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#videoBanner">Video Banner</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- CTV (collapsible) -->
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" data-bs-toggle="collapse" href="#collapseCTV" role="button" aria-expanded="false" aria-controls="collapseCTV">
+          CTV
+          <i class="fas fa-chevron-down arrow"></i>
+        </a>
+        <div class="collapse" id="collapseCTV" data-bs-parent="#navbarResponsive">
+          <ul class="navbar-nav ms-3">
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#ctvQR">CTV QR</a></li>
+            <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#ctvCanvas">CTV Canvas</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#dooh">DOOH</a></li>
+      <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#interactiveVideo">Interactive video</a></li>
+      <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#dcoVideo">DCO Video</a></li>
+      <li class="nav-item"><a class="format_item nav-link js-scroll-trigger" href="#dcoCTV">DCO CTV</a></li>
+
+    </ul>
+  </div>
+</nav>
     <div class="qrCodeContainer">
       <span id="qrCodeLabel" class="qrCodeLabel">See on mobile:</span>
       <img
@@ -98,48 +169,50 @@
     </div>
     <!-- Page Content-->
     <div class="container-fluid p-0">
-      <!-- SlideReel -->
-      <section class="resume-section align-items-center active-section" id="slidereel">
+      <!-- ===========================  Sección: Display  =========================== -->
+
+      <!-- Standard Banners -->
+      <section class="resume-section align-items-center" id="stb">
         <div class="container-fluid">
           <div class="row">
-            <!-- Vista previa: primero en desktop, segundo en móvil -->
+            <!-- Preview -->
             <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
               <div class="preview-area">
-                <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
+                <h3 class="text-danger no_preview">Preview <br>Temporalmente <br> No <br>Disponible</h3>
+                <!-- <div class="ad-frame w-300x250">
+                  <h5>300x250</h5>
                   <div class="iframe-loader" style="display: flex">
-                    <img
-                      src="assets/loader.gif"
-                      alt="Cargando..."
-                      class="loader-gif"
-                    />
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
                   </div>
-                  <iframe
-                    src="./creativos/SlideReel_300x600/index.html"
-                    loading="lazy"
-                  ></iframe>
-                </div>
+                  <iframe src="./creativos/Standard_Banner_300x250/index.html" loading="lazy"></iframe>
+                </div> -->
               </div>
             </div>
-            <!-- Descripción: segundo en desktop, primero en móvil -->
+            <!-- Descripción -->
             <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
+              <div class="description-area" aria-label="Descripción de Standard banners">
                 <div class="description-accent" aria-hidden="true"></div>
                 <div class="description-content">
-                  <h1 class="desc-title">SLIDEREEL</h1>
-                  <div class="desc-subtitle"><span>300x600 </span><span>320x480</span></div>
-                  <p class="desc-text">
-                    Formato dinámico en carrusel que permite mostrar múltiples mensajes o productos en una sola unidad. Ideal para storytelling visual y secuencial.
-                  </p>
+                  <h1 class="desc-title">STANDARD BANNERS</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato básico de banner estándar, ideal para campañas de display tradicional.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600, 160x600, 728x90, 970x250, 300x50, 320x50</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">1 a 2 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">JPG/PNG/GIF/HTML5, máx. 60 KB por imagen, 15 s de animación, 300 dpi recomendado</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">No requiere</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- =========================== Sección: High Impact Basic =========================== -->
+
       <!-- 3D Cube  -->
       <section class="resume-section align-items-center" id="cube">
         <div class="container-fluid">
@@ -148,7 +221,14 @@
             <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
               <div class="preview-area">
                 <div class="ad-frame w-300x250">
-                  <h5>300x250</h5>
+                  <h5>300x250
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
                   <div class="iframe-loader" style="display: flex">
                     <img
                       src="assets/loader.gif"
@@ -175,145 +255,20 @@
 
             <!-- Descripción: segundo en desktop, primero en móvil -->
             <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
+              <div class="description-area" aria-label="Descripción de 3D Cube">
                 <div class="description-accent" aria-hidden="true"></div>
                 <div class="description-content">
                   <h1 class="desc-title">3D CUBE</h1>
-                  <div class="desc-subtitle"><span>300x600 </span><span>320x480 </span><span>300x250</span></div>
-                  <p class="desc-text">
-                    Un cubo interactivo que rota para mostrar diferentes caras del mensaje. Innovador y llamativo, ideal para campañas de alto impacto visual.​
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Stack -->
-      <section class="resume-section align-items-center" id="stack">
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Vista previa: primero en desktop, segundo en móvil -->
-            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
-              <div class="preview-area">
-                <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
-                  <div class="iframe-loader" style="display: flex">
-                    <img
-                      src="assets/loader.gif"
-                      alt="Cargando..."
-                      class="loader-gif"
-                    />
-                  </div>
-                  <iframe
-                    src="./creativos/stack_300x600/index.html"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-
-            <!-- Descripción: segundo en desktop, primero en móvil -->
-            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
-                <div class="description-accent" aria-hidden="true"></div>
-                <div class="description-content">
-                  <h1 class="desc-title">STACK</h1>
-                  <div class="desc-subtitle"><span>300x600 </span><span>320x480</span></div>
-                  <p class="desc-text">
-                    Formato vertical de múltiples capas que se despliegan al interactuar. Ideal para destacar beneficios o características en orden jerárquico.​
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Cinema -->
-      <section class="resume-section align-items-center" id="cinema">
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Vista previa: primero en desktop, segundo en móvil -->
-            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
-              <div class="preview-area">
-                <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
-                  <div class="iframe-loader" style="display: flex">
-                    <img
-                      src="assets/loader.gif"
-                      alt="Cargando..."
-                      class="loader-gif"
-                    />
-                  </div>
-                  <iframe
-                    src="./creativos/cinema_300x600/index.html"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-
-            <!-- Descripción: segundo en desktop, primero en móvil -->
-            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
-                <div class="description-accent" aria-hidden="true"></div>
-                <div class="description-content">
-                  <h1 class="desc-title">CINEMA</h1>
-                  <div class="desc-subtitle">300x600</div>
-                  <p class="desc-text">
-                    Formato tipo tráiler con enfoque audiovisual. Captura la atención con narrativa cinematográfica, ideal para lanzamientos o branding emocional.​
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 3D Orbit -->
-      <section class="resume-section align-items-center" id="orbit">
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Vista previa: primero en desktop, segundo en móvil -->
-            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
-              <div class="preview-area">
-                <div class="ad-frame w-970x250">
-                  <h5>970x250</h5>
-                  <div class="iframe-loader" style="display: flex">
-                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
-                  </div>
-                  <iframe src="./creativos/Orbit_3D_970x250/index.html" loading="lazy"></iframe>
-                </div>
-                <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
-                  <div class="iframe-loader" style="display: flex">
-                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
-                  </div>
-                  <iframe src="./creativos/Orbit_3D_300x600/index.html" loading="lazy"></iframe>
-                </div>
-              </div>
-            </div>
-            <!-- Descripción: segundo en desktop, primero en móvil -->
-            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
-                <div class="description-accent" aria-hidden="true"></div>
-                <div class="description-content">
-                  <h1 class="desc-title">3D ORBIT</h1>
-                  <div class="desc-subtitle"><span>300x600 </span><span>320x480 </span><span>970x250</span></div>
-                  <p class="desc-text">
-                    Experiencia inmersiva en 3D que permite rotar productos o elementos visuales. Perfecto para destacar atributos desde todos los ángulos.​
-                  </p>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Un cubo interactivo que rota para mostrar diferentes caras del mensaje. Innovador y llamativo, ideal para campañas de alto impacto visual.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600, 970x250</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">1 a 3 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">Imágenes JPG/WEBP o MP4 fondo (1 MB máx), overlays PNG/WebP (250 KB máx); se recomienda doble resolución para alta densidad :contentReference[oaicite:2]{index=2}</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
                 </div>
               </div>
             </div>
@@ -328,7 +283,14 @@
             <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
               <div class="preview-area">
                 <div class="ad-frame w-320x480">
-                  <h5>320x480</h5>
+                  <h5>320x480
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
                   <div class="iframe-loader" style="display: flex">
                     <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
                   </div>
@@ -338,17 +300,20 @@
             </div>
             <!-- Descripción: segundo en desktop, primero en móvil -->
             <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
+              <div class="description-area" aria-label="Descripción de Scratch">
                 <div class="description-accent" aria-hidden="true"></div>
                 <div class="description-content">
                   <h1 class="desc-title">SCRATCH</h1>
-                  <div class="desc-subtitle"><span>300x600 </span><span>320x480 </span> <span>300x250</span></div>
-                  <p class="desc-text">
-                    Invita al usuario a “raspar” la pantalla para revelar contenido. Interacción  que genera curiosidad y engagement.​
-                  </p>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Invita al usuario a “raspar” la pantalla para revelar contenido. Interacción  que genera curiosidad y engagement.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600, 970x250</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">1 a 3 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">HTML5 interactivo, imágenes raster, recomendado 72 dpi, peso acorde a formatos estándar.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
                 </div>
               </div>
             </div>
@@ -363,21 +328,42 @@
             <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
               <div class="preview-area">
                 <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
                   <div class="iframe-loader" style="display: flex">
                     <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
                   </div>
                   <iframe src="./creativos/Reveal_300x600/index.html" loading="lazy"></iframe>
                 </div>
                 <div class="ad-frame w-320x480">
-                  <h5>320x480</h5>
+                  <h5>320x480
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
                   <div class="iframe-loader" style="display: flex">
                     <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
                   </div>
                   <iframe src="./creativos/Reveal_320x480/index.html" loading="lazy"></iframe>
                 </div>
                 <div class="ad-frame w-300x250">
-                  <h5>300x250</h5>
+                  <h5>300x250
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
                   <div class="iframe-loader" style="display: flex">
                     <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
                   </div>
@@ -388,88 +374,20 @@
 
             <!-- Descripción: segundo en desktop, primero en móvil -->
             <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
+              <div class="description-area" aria-label="Descripción de Reveal">
                 <div class="description-accent" aria-hidden="true"></div>
                 <div class="description-content">
                   <h1 class="desc-title">REVEAL</h1>
-                  <div class="desc-subtitle"><span>300x600 </span><span>320x480 </span><span>300x250</span></div>
-                  <p class="desc-text">
-                    Contenido oculto que se despliega con la interacción del usuario. Perfecto para promociones, descuentos o mensajes sorpresa.​ 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Social Twin -->
-      <section class="resume-section align-items-center" id="socialtwin">
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Vista previa: primero en desktop, segundo en móvil -->
-            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
-              <div class="preview-area">
-                <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
-                  <div class="iframe-loader" style="display: flex">
-                    <img
-                      src="assets/loader.gif"
-                      alt="Cargando..."
-                      class="loader-gif"
-                    />
-                  </div>
-                  <iframe
-                    src="./creativos/Social_Extension_Carousel_300x600/index.html"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-                <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
-                  <div class="iframe-loader" style="display: flex">
-                    <img
-                      src="assets/loader.gif"
-                      alt="Cargando..."
-                      class="loader-gif"
-                    />
-                  </div>
-                  <iframe
-                    src="./creativos/Social_Extension_Img_300x600/index.html"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-                <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
-                  <div class="iframe-loader" style="display: flex">
-                    <img
-                      src="assets/loader.gif"
-                      alt="Cargando..."
-                      class="loader-gif"
-                    />
-                  </div>
-                  <iframe
-                    src="./creativos/Social_Extension_VideoStorie_300x600/index.html"
-                    loading="lazy"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-
-            <!-- Descripción: segundo en desktop, primero en móvil -->
-            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
-                <div class="description-accent" aria-hidden="true"></div>
-                <div class="description-content">
-                  <h1 class="desc-title">SOCIAL TWIN​</h1>
-                  <div class="desc-subtitle"><span>300x600 </span><span>320x480</span></div>
-                  <p class="desc-text">
-                    Replica la estética y funcionalidad de redes sociales dentro del display. Conecta con audiencias digitales en un entorno familiar y nativo.​
-                  </p>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Contenido oculto que se despliega con la interacción del usuario. Perfecto para promociones, descuentos o mensajes sorpresa.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600, 970x250</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">1 a 3 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">HTML5 con masks/interactions, imágenes PNG/JPG, recomendación: animación máxima 15s, peso mayor a 150 KB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
                 </div>
               </div>
             </div>
@@ -484,7 +402,14 @@
             <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
               <div class="preview-area">
                 <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
                   <div class="iframe-loader" style="display: flex">
                     <img
                       src="assets/loader.gif"
@@ -502,17 +427,338 @@
 
             <!-- Descripción: segundo en desktop, primero en móvil -->
             <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
+              <div class="description-area" aria-label="Descripción de Countdown">
                 <div class="description-accent" aria-hidden="true"></div>
                 <div class="description-content">
                   <h1 class="desc-title">COUNTDOWN</h1>
-                  <div class="desc-subtitle"><span>300x600 </span><span>300x250 </span><span>728x90 </span><span>160x600 </span><span>970x250</span></div>
-                  <p class="desc-text">
-                    Formato con temporizador en vivo. Genera urgencia y expectativa, ideal para lanzamientos, eventos o promociones limitadas.​
-                  </p>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato con temporizador en vivo. Genera urgencia y expectativa, ideal para lanzamientos, eventos o promociones limitadas.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600, 160x600, 728x90, 970x250, 300x50, 320x50</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">1 a 3 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">Countdown con script JS, sincronización de hora, imágenes de fondo en JPG/PNG, máximo 100 KB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===========================     Sección: High Impact Medium =========================== -->
+
+      <!-- SlideReel -->
+      <section class="resume-section align-items-center" id="slidereel">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Vista previa: primero en desktop, segundo en móvil -->
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img
+                      src="assets/loader.gif"
+                      alt="Cargando..."
+                      class="loader-gif"
+                    />
+                  </div>
+                  <iframe
+                    src="./creativos/SlideReel_300x600/index.html"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+            <!-- Descripción: segundo en desktop, primero en móvil -->
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de SlideReel">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">SLIDEREEL</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato dinámico en carrusel que permite mostrar múltiples mensajes o productos en una sola unidad. Ideal para storytelling visual y secuencial.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600, 970x250</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">HTML5, imágenes/layers, máximo 1 MB, animaciones marcos 15 s, recomendación doble resolución para retina.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Social Twin -->
+      <section class="resume-section align-items-center" id="socialtwin">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Vista previa: primero en desktop, segundo en móvil -->
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img
+                      src="assets/loader.gif"
+                      alt="Cargando..."
+                      class="loader-gif"
+                    />
+                  </div>
+                  <iframe
+                    src="./creativos/Social_Extension_Carousel_300x600/index.html"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img
+                      src="assets/loader.gif"
+                      alt="Cargando..."
+                      class="loader-gif"
+                    />
+                  </div>
+                  <iframe
+                    src="./creativos/Social_Extension_Img_300x600/index.html"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img
+                      src="assets/loader.gif"
+                      alt="Cargando..."
+                      class="loader-gif"
+                    />
+                  </div>
+                  <iframe
+                    src="./creativos/Social_Extension_VideoStorie_300x600/index.html"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Descripción: segundo en desktop, primero en móvil -->
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de SOCIAL TWIN">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">SOCIAL TWIN</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Replica la estética y funcionalidad de redes sociales dentro del display. Conecta con audiencias digitales en un entorno familiar y nativo.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">320x480, 300x600</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">HTML5 con icons, swipe/tap, imágenes PNG/JPG, JS para interacciones y adaptativo.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cinema -->
+      <section class="resume-section align-items-center" id="cinema">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Vista previa: primero en desktop, segundo en móvil -->
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img
+                      src="assets/loader.gif"
+                      alt="Cargando..."
+                      class="loader-gif"
+                    />
+                  </div>
+                  <iframe
+                    src="./creativos/cinema_300x600/index.html"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Descripción: segundo en desktop, primero en móvil -->
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de Cinema">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">CINEMA</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato tipo tráiler con enfoque audiovisual. Captura la atención con narrativa cinematográfica, ideal para lanzamientos o branding emocional.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">320x480, 300x600</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">MP4/WEBM FHD, hasta 5 MB, compresión H.264, audio opcional ≤100 KB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Stack -->
+      <section class="resume-section align-items-center" id="stack">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Vista previa: primero en desktop, segundo en móvil -->
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img
+                      src="assets/loader.gif"
+                      alt="Cargando..."
+                      class="loader-gif"
+                    />
+                  </div>
+                  <iframe
+                    src="./creativos/stack_300x600/index.html"
+                    loading="lazy"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!-- Descripción: segundo en desktop, primero en móvil -->
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de Stack">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">STACK</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato vertical de múltiples capas que se despliegan al interactuar. Ideal para destacar beneficios o características en orden jerárquico.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">HTML5, stack de capas PNG/JPG, peso ≤700 KB, max 4 capas plegables.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===========================     Sección: High Impact Advanced  =========================== -->
+
+      <!-- 3D Orbit -->
+      <section class="resume-section align-items-center" id="orbit">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Vista previa: primero en desktop, segundo en móvil -->
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <div class="ad-frame w-970x250">
+                  <h5>970x250
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/Orbit_3D_970x250/index.html" loading="lazy"></iframe>
+                </div>
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/Orbit_3D_300x600/index.html" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+            <!-- Descripción: segundo en desktop, primero en móvil -->
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de 3D Orbit">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">3D ORBIT</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Experiencia inmersiva en 3D que permite rotar productos o elementos visuales. Perfecto para destacar atributos desde todos los ángulos.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600, 970x250</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">5 a 8 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">WebGL/canvas, secuencia de sprites o modelos, peso ≤2 MB, fallback raster.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
                 </div>
               </div>
             </div>
@@ -527,7 +773,14 @@
             <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
               <div class="preview-area">
                 <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
                   <div class="iframe-loader" style="display: flex">
                     <img
                       src="assets/loader.gif"
@@ -545,17 +798,20 @@
 
             <!-- Descripción: segundo en desktop, primero en móvil -->
             <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
+              <div class="description-area" aria-label="Descripción de Playable Catcher">
                 <div class="description-accent" aria-hidden="true"></div>
                 <div class="description-content">
-                  <h1 class="desc-title">Playable Catcher</h1>
-                  <div class="desc-subtitle"><span>300x600 </span><span>320x480</span></div>
-                  <p class="desc-text">
-                    Este formato es un juego divertido y adictivo donde objetos caen desde la parte superior de la pantalla y debes atraparlos antes de que toquen el suelo.
-                  </p>
+                  <h1 class="desc-title">PLAYABLE CATCHER</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Juego interactivo donde el usuario atrapa objetos, ideal para engagement y retención.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">320x480, 300x600</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">5 a 8 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">HTML5 + JS, sprites/PNG, peso ≤3 MB, controles táctiles y animaciones ≤30 fps.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
                 </div>
               </div>
             </div>
@@ -570,7 +826,14 @@
             <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
               <div class="preview-area">
                 <div class="ad-frame w-300x600">
-                  <h5>300x600</h5>
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
                   <div class="iframe-loader" style="display: flex">
                     <img
                       src="assets/loader.gif"
@@ -588,23 +851,642 @@
 
             <!-- Descripción: segundo en desktop, primero en móvil -->
             <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
-              <div
-                class="description-area"
-                aria-label="Descripción de la animación o banner seleccionado"
-              >
+              <div class="description-area" aria-label="Descripción de Playable Puzzle">
                 <div class="description-accent" aria-hidden="true"></div>
                 <div class="description-content">
-                  <h1 class="desc-title">Playable Puzzle</h1>
-                  <div class="desc-subtitle"><span>300x600 </span><span>320x480</span></div>
-                  <p class="desc-text">
-                    Un rompecabezas digital que invita a los usuarios a revelar una historia visual pieza por pieza. Ideal para campañas que combinan entretenimiento y branding.
-                  </p>
+                  <h1 class="desc-title">PLAYABLE PUZZLE</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Rompecabezas digital que desbloquea visualmente contenido mediante piezas.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">320x480, 300x600</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">5 a 8 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">HTML5/puzzle grid con imágenes JPG/PNG, peso ≤3 MB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Playable Memory Card -->
+      <section class="resume-section align-items-center" id="playableMemory">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <h3 class="text-danger no_preview">Preview <br>Temporalmente <br> No <br>Disponible</h3>
+                <!-- <div class="ad-frame w-300x600">
+                  <h5>300x600</h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/Playable_Memory_300x600/index.html" loading="lazy"></iframe>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de Playable Memory">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">PLAYABLE MEMORY</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Juego de memorias interactivo, fomenta retención y engagement en formatos digitales.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">320x480, 300x600</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">5 a 8 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">HTML5 con logica de matching, sprites/PNG, peso ≤3 MB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Playable Kickups -->
+      <section class="resume-section align-items-center" id="playableKickups">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <h3 class="text-danger no_preview">Preview <br>Temporalmente <br> No <br>Disponible</h3>
+                <!-- <div class="ad-frame w-300x600">
+                  <h5>300x600</h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/Playable_Kickups_300x600/index.html" loading="lazy"></iframe>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de Playable Kickups">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">PLAYABLE KICKUPS</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Juego donde el usuario mantiene un objeto en el aire, generando dinamismo y diversión.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">320x480, 300x600</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">5 a 8 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">HTML5 + physics JS, sprites, peso ≤3 MB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== Sección: DCO =========================== -->
+
+      <!-- DCO Basic -->
+      <section class="resume-section align-items-center" id="dcoBasic">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <h3 class="text-danger no_preview">Preview <br>Temporalmente <br> No <br>Disponible</h3>
+                <!-- <div class="ad-frame w-300x250">
+                  <h5>300x250</h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/DCO_Display_Basic_300x250/index.html" loading="lazy"></iframe>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de DCO Display Basic">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">DCO DISPLAY BASIC</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Banner dinámico personalizado en tiempo real, ideal para mensajes segmentados básicos.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600, 160x600, 728x90, 970x250, 300x50, 320x50</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">Ad custom fields, imágenes dinamizadas, peso ≤1 MB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Requiere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- DCO Medium -->
+      <section class="resume-section align-items-center" id="dcoMedium">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area ad-frame-container littlecaesars-grid">
+                <div class="ad-frame w-300x600">
+                  <h5>
+                    300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/2025_Julio_LittleCaesars_DCO_300x600/index.html?row=2" loading="lazy"></iframe>
+                </div>
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/2025_Julio_LittleCaesars_DCO_300x600/index.html?row=7" loading="lazy"></iframe>
+                </div>
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/2025_Julio_LittleCaesars_DCO_300x600/index.html?row=10" loading="lazy"></iframe>
+                </div>
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/2025_Julio_LittleCaesars_DCO_300x600/index.html?row=18" loading="lazy"></iframe>
+                </div>
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/2025_Julio_LittleCaesars_DCO_300x600/index.html?row=20" loading="lazy"></iframe>
+                </div>
+                <div class="ad-frame w-300x600">
+                  <h5>300x600
+                    <button class="reload-iframe-btn" type="button" title="Recargar" data-iframe-index="1">
+                      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 4v5h5" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 10a7.5 7.5 0 1 1 2.2 5.3" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </button>
+                  </h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/2025_Julio_LittleCaesars_DCO_300x600/index.html?row=25" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de DCO Display Medium">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">DCO DISPLAY MEDIUM</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Banner dinámico personalizado con lógica y múltiples variables, ideal para segmentación avanzada.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600, 160x600, 728x90, 970x250, 300x50, 320x50</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">5 a 8 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">Feeds JSON/XML, lógica condicional, personalización por usuario, peso ≤1.5 MB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Requiere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- DCO Advanced -->
+      <section class="resume-section align-items-center" id="dcoAdvanced">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <h3 class="text-danger no_preview">Preview <br>Temporalmente <br> No <br>Disponible</h3>
+                <!-- <div class="ad-frame w-970x250">
+                  <h5>970x250</h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif"/>
+                  </div>
+                  <iframe src="./creativos/DCO_Display_Advanced_970x250/index.html" loading="lazy"></iframe>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de DCO Display Advanced">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">DCO DISPLAY ADVANCED</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato DCO más sofisticado, con lógica compleja, datos en tiempo real y contenido personalizado dinámicamente.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">300x250, 320x480, 300x600, 160x600, 728x90, 970x250, 300x50, 320x50</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">8 a 12 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">API real-time, contenido dinámico multivariable, peso ≤2 MB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Requiere</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== Sección: Video VAST =========================== -->
+
+      <!-- Video Endcard -->
+      <section class="resume-section align-items-center" id="videoEncard">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <div class="ad-frame embed-responsive embed-responsive-16by9">
+                  <h5>16:9</h5>
+                  <video class="embed-responsive-item" controls muted loop>
+                    <source src="./creativos/OLV_EndCard.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de Video Encard">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">VIDEO ENCARD</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Cierre visual que refuerza el mensaje de campaña con un llamado a la acción claro. Ideal para complementar piezas de video y aumentar la recordación.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">Video FHD 1920x1080, 16:9</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">MP4 H.264 <br> hasta 10 MB, preload, loop opcional.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Video Canvas -->
+      <section class="resume-section align-items-center" id="videoCanvas">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <div class="ad-frame embed-responsive embed-responsive-16by9">
+                  <h5>16:9</h5>
+                  <video class="embed-responsive-item" controls muted loop>
+                    <source src="./creativos/OLV_Canva.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de Video Canvas">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">VIDEO CANVAS</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato inmersivo que combina video con un player brandeado. Perfecto para storytelling envolvente y experiencias de marca memorables.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">Video FHD 1920x1080, 16:9</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">HTML5 video con canvas, preload, controles, hasta 12 MB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Video Banner -->
+      <section class="resume-section align-items-center" id="videoBanner">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <div class="ad-frame embed-responsive embed-responsive-16by9">
+                  <h5>16:9</h5>
+                  <video class="embed-responsive-item" controls muted loop>
+                    <source src="./creativos/OLV_Banner.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de Video Banner">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">VIDEO BANNER</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato inmersivo que combina video con un banner brandeado. Perfecto para incluir ofertas e información de atención importante.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">Video FHD 1920x1080, 16:9</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">MP4 ≤8 MB, autoplay mute, loop opcional.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== Sección: CTV =========================== -->
+
+      <!-- Video CTV QR -->
+      <section class="resume-section align-items-center" id="ctvQR">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <div class="ad-frame embed-responsive embed-responsive-16by9">
+                  <h5>16:9</h5>
+                  <video class="embed-responsive-item" controls muted loop>
+                    <source src="./creativos/CTV_Banner.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de CTV QR">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">CTV QR</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Video con integración de código QR que permite conectar la experiencia en pantalla con acciones inmediatas desde el móvil. Ideal para promociones o redirección a sitios.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">Video FHD 1920x1080, 16:9</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">Video MP4 10 MB, overlay de QR PNG/JPG.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video CTV Canvas -->
+      <section class="resume-section align-items-center" id="ctvCanvas">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <div class="ad-frame embed-responsive embed-responsive-16by9">
+                  <h5>16:9</h5>
+                  <video class="embed-responsive-item" controls muted loop>
+                    <source src="./creativos/CTV_Canva.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de CTV Canvas">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">CTV CANVAS</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Video con integración de código QR que permite conectar la experiencia en pantalla con acciones inmediatas desde el móvil. Ideal para promociones o redirección a sitios.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">Video FHD 1920x1080, 16:9</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">Canvas HTML5, interacciones con control remoto, peso ≤12 MB.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== Sección: DOOH =========================== -->
+      <section class="resume-section align-items-center" id="dooh">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Vista previa -->
+          <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+            <div class="preview-area">
+              <h3 class="text-danger no_preview">Preview <br>Temporalmente <br> No <br>Disponible</h3>
+             <!-- <div class="ad-frame w-300x600">
+                <h5>DCO CTV</h5>
+                <div class="iframe-loader" style="display: flex">
+                  <img src="assets/loader.gif" alt="Cargando..." class="loader-gif" />
+                </div>
+                <iframe src="./creativos/DCO_CTV_300x600/index.html" loading="lazy"></iframe>
+              </div> -->
+            </div>
+          </div>
+          <!-- Descripción -->
+          <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+            <div class="description-area" aria-label="Descripción de CTV QR">
+              <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">DOOH</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato para TV conectada con QR code, permite interacción entre TV y móvil.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">Video FHD 1920x1080, 16:9</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">Video MP4 10 MB, overlay de QR PNG/JPG.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== Sección: Interactive video =========================== -->
+
+      <section class="resume-section align-items-center" id="interactiveVideo">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Vista previa -->
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <h3 class="text-danger no_preview">Preview <br>Temporalmente <br> No <br>Disponible</h3>
+                <!-- <div class="ad-frame w-300x600">
+                  <h5>DCO CTV</h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif" />
+                  </div>
+                  <iframe src="./creativos/DCO_CTV_300x600/index.html" loading="lazy"></iframe>
+                </div> -->
+              </div>
+            </div>
+            <!-- Descripción -->
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de CTV QR">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">Interactive video</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato para TV conectada con QR code, permite interacción entre TV y móvil.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">Video FHD 1920x1080, 16:9</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">Video MP4 10 MB, overlay de QR PNG/JPG.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== Sección: DCO Video  =========================== -->
+
+      <section class="resume-section align-items-center" id="dcoVideo">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Vista previa -->
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <h3 class="text-danger no_preview">Preview <br>Temporalmente <br> No <br>Disponible</h3>
+                <!-- <div class="ad-frame w-300x600">
+                  <h5>300x600</h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif" />
+                  </div>
+                  <iframe src="./creativos/DCO_CTV_300x600/index.html" loading="lazy"></iframe>
+                </div> -->
+              </div>
+            </div>
+            <!-- Descripción -->
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de CTV QR">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">DCO Video</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato para TV conectada con QR code, permite interacción entre TV y móvil.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">Video FHD 1920x1080, 16:9</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">Video MP4 10 MB, overlay de QR PNG/JPG.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================== Sección: DCO CTV ========================== -->
+
+      <section class="resume-section align-items-center" id="dcoCTV">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Vista previa -->
+            <div class="col-lg-7 col-md-12 h-100 order-2 order-sm-1 p-0">
+              <div class="preview-area">
+                <h3 class="text-danger no_preview">Preview <br>Temporalmente <br> No <br>Disponible</h3>
+                <!-- <div class="ad-frame w-300x600">
+                  <h5>DCO CTV</h5>
+                  <div class="iframe-loader" style="display: flex">
+                    <img src="assets/loader.gif" alt="Cargando..." class="loader-gif" />
+                  </div>
+                  <iframe src="./creativos/DCO_CTV_300x600/index.html" loading="lazy"></iframe>
+                </div> -->
+              </div>
+            </div>
+            <!-- Descripción -->
+            <div class="col-lg-5 col-md-12 h-100 order-1 order-sm-2 p-0">
+              <div class="description-area" aria-label="Descripción de CTV QR">
+                <div class="description-accent" aria-hidden="true"></div>
+                <div class="description-content">
+                  <h1 class="desc-title">DCO CTV</h1>
+                  <div class="desc-subtitle"><span>Descripción:</span></div>
+                  <p class="desc-text">Formato para TV conectada con QR code, permite interacción entre TV y móvil.</p>
+                  <div class="desc-subtitle"><span>Tamaños:</span></div>
+                  <p class="desc-text">Video FHD 1920x1080, 16:9</p>
+                  <div class="desc-subtitle"><span>Tiempos:</span></div>
+                  <p class="desc-text">2 a 4 días hábiles</p>
+                  <div class="desc-subtitle"><span>Specs:</span></div>
+                  <p class="desc-text">Video MP4 10 MB, overlay de QR PNG/JPG.</p>
+                  <div class="desc-subtitle"><span>Adserver:</span></div>
+                  <p class="desc-text">Opcional</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
