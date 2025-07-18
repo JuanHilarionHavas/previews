@@ -11130,6 +11130,14 @@ html {
   scrollbar-color: rgba(27, 35, 67, 0.4) transparent;
 }
 
+/* Estilo para la sección activa */
+.active-section {
+  background: rgba(0,223,196,0.08); /* fondo suave turquesa */
+  border-left: 6px solid #00dfc4;
+  color: #00dfc4;
+  transition: background 0.3s, border 0.3s, color 0.3s;
+}
+
 /* Animación de fade-slide al mostrar una sección */
 .resume-section {
   opacity: 0;
@@ -11166,6 +11174,37 @@ video.embed-responsive-item {
   align-items: center;
 }
 
+.description-content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #00dfc4 #222;
+  padding-right: 2rem;
+}
+
+.desc-text-terms{
+  font-size: 12px;
+  color: lightgray;
+  font-style: italic;
+}
+
+.description-area{
+  padding-right: 2rem;
+}
+
+.required-text{
+  color: #00dfc4;
+}
+
+.section_link{
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.item_link{
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
 
 @media (min-width: 1450px) {
   .ad-frame-container.littlecaesars-grid {
@@ -11184,7 +11223,7 @@ video.embed-responsive-item {
   }
   .ad-frame .reload-iframe-btn {
   border: none;
-    background: transparent;
+  background: transparent;
   padding: 0;
   margin-left: auto;
   cursor: pointer;

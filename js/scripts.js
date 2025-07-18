@@ -105,6 +105,23 @@ window.addEventListener('DOMContentLoaded', event => {
             const targetId = el.getAttribute("href").substring(1);
             activateSectionById(targetId);
 
+            // Actualizar estado de los section_link igual que al cargar el DOM
+            document.querySelectorAll('.section_link').forEach(sectionLink => sectionLink.classList.remove('active'));
+            const link = document.querySelector(`a[href="#${targetId}"]`);
+            if (link) {
+                link.classList.add("active");
+                // Si el link está dentro de un collapse, activa el section_link correspondiente
+                const collapseParent = link.closest('.collapse');
+                if (collapseParent) {
+                    const sectionLink = collapseParent.previousElementSibling;
+                    if (sectionLink && sectionLink.classList.contains('section_link')) {
+                        sectionLink.classList.add('active');
+                    }
+                } else if (link.classList.contains('section_link')) {
+                    // Si el propio link es section_link
+                    link.classList.add('active');
+                }
+            }
         });
     });
 
@@ -131,15 +148,25 @@ window.addEventListener('DOMContentLoaded', event => {
 
     activateSectionById(targetId);
     const link = document.querySelector(`a[href="#${targetId}"]`);
-    console.log("Enlace activado:", link);
+    // Quitar clase active de todos los section_link
+    document.querySelectorAll('.section_link').forEach(sectionLink => sectionLink.classList.remove('active'));
+
     if (link) {
         link.classList.add("active");
+        // Si el link está dentro de un collapse, activa el section_link correspondiente
         const collapseParent = link.closest('.collapse');
-            if (collapseParent) {
-            // Usa Bootstrap para colapsar la sección
+        if (collapseParent) {
             const bsCollapse = bootstrap.Collapse.getOrCreateInstance(collapseParent);
             bsCollapse.hide();
+            // El section_link es el elemento anterior al collapse
+            const sectionLink = collapseParent.previousElementSibling;
+            if (sectionLink && sectionLink.classList.contains('section_link')) {
+                sectionLink.classList.add('active');
             }
+        } else if (link.classList.contains('section_link')) {
+            // Si el propio link es section_link
+            link.classList.add('active');
+        }
     }
 
     generateQRCode(targetId);
